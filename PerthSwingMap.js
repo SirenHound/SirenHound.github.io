@@ -1,1 +1,1 @@
-var map = new L.Map('PerthSwingMap', {});
+var map = new L.Map('danceMap', {});
