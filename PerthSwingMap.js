@@ -5,8 +5,9 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
 if ("geolocation" in navigator) {
   /* geolocation is available */
   navigator.geolocation.getCurrentPosition(function(position) {
+    alert("L");
     var latLng = L.latlng(position.coords.latitude, position.coords.longitude);
-    alert("latlng: "+ latLng.toString());
+    //alert("latlng: "+ latLng.toString());
     L.marker(latLng).addTo(map);
     map.panTo(latLng);
   });
