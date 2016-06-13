@@ -8,7 +8,7 @@ if ("geolocation" in navigator) {
     alert("L");
     var latLng = L.latLng(position.coords.latitude, position.coords.longitude);
     //alert("latlng: "+ latLng.toString());
-    L.marker(latLng).addTo(map);
+    L.circleMarker(latLng).addTo(map);
     map.panTo(latLng);
   });
 } else {
