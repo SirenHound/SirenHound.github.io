@@ -15,3 +15,11 @@ if ("geolocation" in navigator) {
   /* geolocation IS NOT available */
   alert("No Location");
 }
+imgOv = L.imageOverlay("http://farm8.staticflickr.com/7292/10134658063_fca4fc3da2_o.jpg",
+L.latLngBounds(L.latLng({
+    "lat": -58.39999999999999,
+    "lng": -202.42
+  }), L.latLng({
+    "lat": 70.40000000000003,
+    "lng": 247.08000000000018
+  })), {opacity:0.5}).addTo(map)
